@@ -1,0 +1,43 @@
+.public-cta-section {
+  width: 100%;
+}
+
+.public-cta-container {
+  position: relative;
+}
+
+.public-cta-title,
+.public-cta-description,
+.public-cta-note {
+  word-break: break-word;
+}
+
+.public-cta-primary-link,
+.public-cta-secondary-link {
+  text-decoration: none;
+}
+
+.public-cta-primary-link,
+.public-cta-secondary-link,
+.cta-primary-button,
+.cta-secondary-button {
+  display: inline-flex;
+}
+
+.cta-primary-button,
+.cta-secondary-button {
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.public-cta-primary-icon {
+  flex-shrink: 0;
+}
+
+.public-cta-top-blur,
+.public-cta-bottom-blur,
+.public-cta-dot-pattern {
+  pointer-events: none;
+}
