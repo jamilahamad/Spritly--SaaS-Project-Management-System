@@ -166,7 +166,21 @@ exports.login = async (req, res, next) => {
   try {
     const { email, password } = req.body;
 
-    const normalizedEmail = email?.toLowerCase().trim();
+    if (!email || !email.trim()) {
+      return res.status(400).json({
+        success: false,
+        message: 'Please provide an email'
+      });
+    }
+
+    if (!password) {
+      return res.status(400).json({
+        success: false,
+        message: 'Please provide a password'
+      });
+    }
+
+    const normalizedEmail = email.toLowerCase().trim();
 
     const user = await User.findOne({ email: normalizedEmail }).select('+password');
 
