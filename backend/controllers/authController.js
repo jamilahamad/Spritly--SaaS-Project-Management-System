@@ -8,7 +8,7 @@ const sendEmail = require('../utils/sendEmail');
 const config = require('../config/config');
 const { sendTokenResponse } = require('../utils/generateToken');
 const asyncHandler = require('../middleware/async');
-// const ErrorResponse = require('../utils/errorResponse');
+const ErrorResponse = require('../utils/errorResponse');
 const streamifier = require('streamifier');
 const cloudinary = require('../config/cloudinary');
 
