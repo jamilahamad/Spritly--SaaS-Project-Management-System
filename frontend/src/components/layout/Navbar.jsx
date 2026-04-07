@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import './Navbar.css';
 import {
   HiBell,
   HiMenuAlt3,
