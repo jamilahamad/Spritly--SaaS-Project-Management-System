@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { HiOutlineBell, HiOutlineCheck, HiOutlineTrash } from 'react-icons/hi';
 import { useNavigate } from 'react-router-dom';
+import './Notifications.css';
 import { toast } from 'react-toastify';
 import { useNotifications } from '../hooks/useNotifications';
 import { useOrganization } from '../hooks/useOrganization';
