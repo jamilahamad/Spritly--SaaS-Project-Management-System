@@ -1,0 +1,37 @@
+.dashboard-page {
+  width: 100%;
+}
+
+.dashboard-title,
+.dashboard-subtitle,
+.dashboard-stat-label,
+.dashboard-empty-text,
+.dashboard-activity-empty,
+.dashboard-card-title,
+.dashboard-task-title,
+.dashboard-activity-text,
+.dashboard-activity-time,
+.dashboard-status-name {
+  word-break: break-word;
+}
+
+.dashboard-stat-card,
+.dashboard-tasks-card,
+.dashboard-status-card,
+.dashboard-activity-card {
+  overflow: hidden;
+}
+
+.dashboard-task-link,
+.dashboard-card-link {
+  text-decoration: none;
+}
+
+.dashboard-task-left,
+.dashboard-activity-content {
+  min-width: 0;
+}
+
+.dashboard-status-fill {
+  min-width: 0;
+}
