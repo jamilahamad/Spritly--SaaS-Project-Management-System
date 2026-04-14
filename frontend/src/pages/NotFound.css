@@ -1,0 +1,29 @@
+.not-found-page {
+  width: 100%;
+}
+
+.not-found-container {
+  width: 100%;
+}
+
+.not-found-title,
+.not-found-description,
+.not-found-help-text,
+.not-found-help-link {
+  word-break: break-word;
+}
+
+.not-found-dashboard-link,
+.not-found-help-link {
+  text-decoration: none;
+}
+
+.not-found-help-links {
+  flex-wrap: wrap;
+}
+
+.not-found-code,
+.not-found-icon,
+.not-found-icon-wrapper {
+  flex-shrink: 0;
+}
