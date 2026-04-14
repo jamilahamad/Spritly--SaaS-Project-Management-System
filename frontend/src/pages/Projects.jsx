@@ -5,6 +5,7 @@ import {
   HiOutlineViewGrid,
   HiOutlineViewList
 } from 'react-icons/hi';
+import './Projects.css';
 import { useOrganization } from '../hooks/useOrganization';
 import projectService from '../services/projectService';
 import Button from '../components/common/Button';
