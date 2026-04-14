@@ -10,6 +10,7 @@ import {
   HiOutlinePencil,
   HiOutlineCheck
 } from 'react-icons/hi';
+import './TaskDetails.css';
 import taskService from '../services/taskService';
 import { useAuth } from '../hooks/useAuth';
 import { useOrganization } from '../hooks/useOrganization';
