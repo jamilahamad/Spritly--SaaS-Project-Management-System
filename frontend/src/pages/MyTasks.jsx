@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { HiOutlineClipboardList } from 'react-icons/hi';
+import './MyTasks.css';
 import { useAuth } from '../hooks/useAuth';
 import { useOrganization } from '../hooks/useOrganization';
 import taskService from '../services/taskService';
