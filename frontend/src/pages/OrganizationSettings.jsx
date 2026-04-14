@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { HiOutlineOfficeBuilding, HiOutlineTrash } from 'react-icons/hi';
 import { toast } from 'react-toastify';
+import './OrganizationSettings.css';
 
 import { canAccessSettings } from '../utils/helpers';
 import EmptyState from '../components/common/EmptyState';
