@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.features-page {
+  min-height: 100vh;
+}
+
+.features-hero-primary-link,
+.features-hero-secondary-link,
+.features-highlight-link {
+  text-decoration: none;
+}
+
+.features-hero-primary-button,
+.features-hero-secondary-button,
+.features-highlight-button {
+  border: none;
+  cursor: pointer;
+}
+
+.features-illustration-image {
+  display: block;
+}
+
+.features-hero-description,
+.features-core-description,
+.features-highlight-description,
+.features-additional-card-description,
+.features-section-description {
+  word-break: break-word;
+}
+
+.features-highlight-card,
+.features-core-card,
+.features-additional-card {
+  overflow: hidden;
+}

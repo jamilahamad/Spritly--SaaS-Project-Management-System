@@ -1,0 +1,16 @@
+.badge-base {
+  white-space: nowrap;
+}
+
+.badge-text,
+.badge-dot,
+.badge-remove-icon {
+  flex-shrink: 0;
+}
+
+.badge-remove-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}

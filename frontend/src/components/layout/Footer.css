@@ -1,0 +1,29 @@
+.footer-main,
+.footer-minimal {
+  width: 100%;
+}
+
+.footer-brand-link,
+.footer-link,
+.footer-support-link,
+.footer-bottom-link,
+.footer-minimal-link {
+  text-decoration: none;
+}
+
+.footer-brand-logo {
+  display: block;
+}
+
+.footer-brand-description,
+.footer-bottom-copy,
+.footer-minimal-copy {
+  word-break: break-word;
+}
+
+.footer-links-list,
+.footer-support-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

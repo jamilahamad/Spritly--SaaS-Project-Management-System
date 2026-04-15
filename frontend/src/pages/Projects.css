@@ -1,0 +1,24 @@
+.projects-page {
+  width: 100%;
+}
+
+.projects-title,
+.projects-subtitle {
+  word-break: break-word;
+}
+
+.projects-header-content,
+.projects-search,
+.projects-grid,
+.projects-list {
+  width: 100%;
+}
+
+.projects-view-button {
+  border: none;
+  cursor: pointer;
+}
+
+.projects-view-icon {
+  flex-shrink: 0;
+}

@@ -1,0 +1,15 @@
+.project-modal-form {
+  width: 100%;
+}
+
+.project-modal-fields,
+.project-modal-name-field,
+.project-modal-key-field,
+.project-modal-actions {
+  width: 100%;
+}
+
+.project-modal-form,
+.project-modal-fields {
+  min-width: 0;
+}

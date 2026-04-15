@@ -1,0 +1,16 @@
+.textarea-field {
+  width: 100%;
+}
+
+.textarea-label,
+.textarea-helper {
+  word-break: break-word;
+}
+
+.textarea-input {
+  display: block;
+}
+
+.textarea-input:disabled {
+  opacity: 1;
+}

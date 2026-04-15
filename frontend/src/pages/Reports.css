@@ -1,0 +1,28 @@
+.reports-page {
+  width: 100%;
+}
+
+.reports-title,
+.reports-subtitle,
+.reports-card-title,
+.reports-stat-label,
+.reports-team-name,
+.reports-team-meta,
+.reports-empty-team {
+  word-break: break-word;
+}
+
+.reports-stat-card,
+.reports-chart-card,
+.reports-team-card,
+.reports-types-card {
+  overflow: hidden;
+}
+
+.reports-team-info {
+  min-width: 0;
+}
+
+.reports-team-progress-fill {
+  min-width: 0;
+}

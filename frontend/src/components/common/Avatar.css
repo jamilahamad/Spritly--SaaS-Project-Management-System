@@ -1,0 +1,19 @@
+.avatar-wrapper {
+  position: relative;
+}
+
+.avatar-image,
+.avatar-fallback,
+.avatar-status,
+.avatar-group-more {
+  flex-shrink: 0;
+}
+
+.avatar-image {
+  display: block;
+}
+
+.avatar-fallback,
+.avatar-group-more {
+  user-select: none;
+}
