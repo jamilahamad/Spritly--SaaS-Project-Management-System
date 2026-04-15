@@ -1,0 +1,28 @@
+.team-page {
+  width: 100%;
+}
+
+.team-title,
+.team-subtitle,
+.team-member-name,
+.team-member-email {
+  word-break: break-word;
+}
+
+.team-table-wrapper {
+  width: 100%;
+}
+
+.team-table {
+  border-collapse: collapse;
+}
+
+.team-row-menu-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.team-member-text {
+  min-width: 0;
+}

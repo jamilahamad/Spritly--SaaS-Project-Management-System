@@ -1,0 +1,28 @@
+.organization-settings-page {
+  width: 100%;
+}
+
+.organization-settings-title,
+.organization-settings-subtitle,
+.organization-settings-card-title,
+.organization-settings-workflow-text,
+.organization-settings-danger-title,
+.organization-settings-danger-label,
+.organization-settings-danger-description {
+  word-break: break-word;
+}
+
+.organization-settings-general-card,
+.organization-settings-workflow-card,
+.organization-settings-danger-card {
+  overflow: hidden;
+}
+
+.organization-settings-workflow-list,
+.organization-settings-danger-list {
+  width: 100%;
+}
+
+.organization-settings-danger-text {
+  min-width: 0;
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.pricing-page {
+  min-height: 100vh;
+}
+
+.pricing-card-link,
+.pricing-contact-link {
+  text-decoration: none;
+}
+
+.pricing-card-button,
+.pricing-contact-button,
+.pricing-billing-button {
+  border: none;
+  cursor: pointer;
+}
+
+.pricing-card,
+.pricing-comparison-card,
+.pricing-faq-card {
+  overflow: hidden;
+}
+
+.pricing-hero-description,
+.pricing-section-description,
+.pricing-faq-answer,
+.pricing-card-description,
+.pricing-card-feature-text,
+.pricing-comparison-value-text {
+  word-break: break-word;
+}
+
+.pricing-comparison-table {
+  border-collapse: collapse;
+}
+
+.pricing-comparison-head-cell,
+.pricing-comparison-plan-head,
+.pricing-comparison-feature,
+.pricing-comparison-value {
+  white-space: nowrap;
+}

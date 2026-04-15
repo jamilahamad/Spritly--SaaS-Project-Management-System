@@ -1,0 +1,47 @@
+.public-navbar,
+.dashboard-navbar {
+  width: 100%;
+}
+
+.public-navbar-brand,
+.dashboard-navbar-brand {
+  flex-shrink: 0;
+}
+
+.public-navbar-logo,
+.dashboard-navbar-logo {
+  display: block;
+}
+
+.public-navbar-link,
+.public-navbar-signin,
+.public-navbar-register,
+.public-navbar-mobile-link,
+.public-navbar-mobile-signin,
+.public-navbar-mobile-register,
+.dashboard-navbar-notification,
+.dashboard-navbar-user-trigger,
+.dashboard-navbar-sidebar-toggle,
+.dashboard-navbar-org-trigger {
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.public-navbar-mobile-menu {
+  will-change: max-height, opacity;
+}
+
+.public-navbar-mobile-panel {
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.dashboard-navbar-notification-badge {
+  line-height: 1;
+}
+
+.dashboard-navbar-user-name,
+.dashboard-navbar-org-name,
+.dashboard-navbar-fullname,
+.dashboard-navbar-email {
+  white-space: nowrap;
+}

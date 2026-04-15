@@ -1,0 +1,28 @@
+.my-tasks-page {
+  width: 100%;
+}
+
+.my-tasks-title,
+.my-tasks-subtitle,
+.my-tasks-group-title,
+.my-tasks-item-title,
+.my-tasks-item-project,
+.my-tasks-item-due {
+  word-break: break-word;
+}
+
+.my-tasks-group-card {
+  overflow: hidden;
+}
+
+.my-tasks-item {
+  text-decoration: none;
+}
+
+.my-tasks-item-content {
+  min-width: 0;
+}
+
+.my-tasks-item-type {
+  flex-shrink: 0;
+}

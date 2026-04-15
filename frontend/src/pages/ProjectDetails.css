@@ -1,0 +1,53 @@
+.project-details-page {
+  width: 100%;
+}
+
+.project-details-title,
+.project-details-description,
+.project-details-meta-item,
+.project-details-task-title,
+.project-details-task-key,
+.project-details-member-name,
+.project-details-member-email,
+.project-details-members-modal-description,
+.project-details-members-role,
+.project-details-section-title,
+.project-details-empty-members,
+.project-details-view-only {
+  word-break: break-word;
+}
+
+.project-details-header-card,
+.project-details-task-list-card {
+  overflow: hidden;
+}
+
+.project-details-members-button,
+.project-details-view-button,
+.project-details-more-button,
+.project-details-set-lead-button,
+.project-details-remove-member-button,
+.project-details-add-member-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.project-details-avatar,
+.project-details-members-button-icon,
+.project-details-view-icon,
+.project-details-more-icon,
+.project-details-section-icon,
+.project-details-search-icon,
+.project-details-lead-icon,
+.project-details-set-lead-icon,
+.project-details-remove-member-icon,
+.project-details-add-member-icon {
+  flex-shrink: 0;
+}
+
+.project-details-member-info,
+.project-details-member-text,
+.project-details-task-main {
+  min-width: 0;
+}

@@ -1,0 +1,24 @@
+.notifications-page {
+  width: 100%;
+}
+
+.notifications-header {
+  gap: 1rem;
+}
+
+.notifications-header-content,
+.notifications-actions,
+.notifications-list-wrapper {
+  width: 100%;
+}
+
+.notifications-title,
+.notifications-subtitle {
+  word-break: break-word;
+}
+
+.notifications-actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
