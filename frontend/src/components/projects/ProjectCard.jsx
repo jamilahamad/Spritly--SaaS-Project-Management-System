@@ -5,6 +5,7 @@ import {
   HiOutlineUsers,
   HiOutlineClipboardList
 } from 'react-icons/hi';
+import './ProjectCard.css';
 import { AvatarGroup } from '../common/Avatar';
 import Badge from '../common/Badge';
 import { PROJECT_STATUS } from '../../utils/constants';
