@@ -36,19 +36,19 @@ import OrganizationSettings from './pages/OrganizationSettings';
 import Notifications from './pages/Notifications';
 import Reports from './pages/Reports';
 
-const ProtectedRoute = ({ children }) => {
-  const { isAuthenticated, loading } = useContext(AuthContext);
+// const ProtectedRoute = ({ children }) => {
+//   const { isAuthenticated, loading } = useContext(AuthContext);
 
-  if (loading) {
-    return <Loader text="Checking authentication..." />;
-  }
+//   if (loading) {
+//     return <Loader text="Checking authentication..." />;
+//   }
 
-  if (!isAuthenticated) {
-    return <Navigate to="/login" replace />;
-  }
+//   if (!isAuthenticated) {
+//     return <Navigate to="/login" replace />;
+//   }
 
-  return children;
-};
+//   return children;
+// };
 
 const AuthOnlyRoute = ({ children }) => {
   const { isAuthenticated, loading } = useContext(AuthContext);
