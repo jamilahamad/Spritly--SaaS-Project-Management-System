@@ -93,9 +93,11 @@ exports.register = async (req, res) => {
       } catch (emailError) {
         console.error('Resend verification email error:', emailError);
 
-        return res.status(500).json({
-          success: false,
-          message: 'Account exists but verification email could not be sent. Please try again.'
+        return res.status(200).json({
+          success: true,
+          message: 'Account already exists and is still pending verification. Email could not be sent right now. Please try resend verification later.',
+          requiresEmailVerification: true,
+          email: existingUser.email
         });
       }
     }
@@ -143,11 +145,11 @@ exports.register = async (req, res) => {
     } catch (emailError) {
       console.error('Registration email error:', emailError);
 
-      await User.findByIdAndDelete(user._id);
-
-      return res.status(500).json({
-        success: false,
-        message: 'Registration failed because verification email could not be sent. Please try again.'
+      return res.status(201).json({
+        success: true,
+        message: 'Account created successfully, but verification email could not be sent right now. Please use resend verification later.',
+        requiresEmailVerification: true,
+        email: user.email
       });
     }
   } catch (error) {
