@@ -4,15 +4,16 @@ const config = require('../config/config');
 const sendEmail = async ({ email, subject, message, html }) => {
   const transporter = nodemailer.createTransport({
     host: config.SMTP_HOST,
-    port: config.SMTP_PORT,
-    secure: false, // use false for port 587
+    port: Number(config.SMTP_PORT),
+    secure: Number(config.SMTP_PORT) === 465,
     auth: {
       user: config.SMTP_EMAIL,
       pass: config.SMTP_PASSWORD,
     },
+    connectionTimeout: 10000,
+    greetingTimeout: 10000,
+    socketTimeout: 10000,
   });
-
-  await transporter.verify();
 
   const mailOptions = {
     from: `${config.FROM_NAME || 'Sprintly'} <${config.SMTP_EMAIL}>`,
