@@ -1,36 +1,44 @@
-const nodemailer = require('nodemailer');
+const axios = require('axios');
 const config = require('../config/config');
 
 const sendEmail = async ({ email, subject, message, html }) => {
-  console.log('SMTP DEBUG', {
-  host: config.SMTP_HOST,
-  port: config.SMTP_PORT,
-  user: config.SMTP_EMAIL,
-  hasPassword: !!config.SMTP_PASSWORD
-});
-  const transporter = nodemailer.createTransport({
-    host: config.SMTP_HOST,
-    port: Number(config.SMTP_PORT),
-    secure: Number(config.SMTP_PORT) === 465,
-    auth: {
-      user: config.SMTP_EMAIL,
-      pass: config.SMTP_PASSWORD,
-    },
-    connectionTimeout: 10000,
-    greetingTimeout: 10000,
-    socketTimeout: 10000,
-  });
+  if (!config.BREVO_API_KEY) {
+    throw new Error('BREVO_API_KEY is missing');
+  }
 
-  const mailOptions = {
-    from: `${config.FROM_NAME || 'Sprintly'} <${config.SMTP_EMAIL}>`,
-    to: email,
+  if (!config.SENDER_EMAIL) {
+    throw new Error('SENDER_EMAIL is missing');
+  }
+
+  const payload = {
+    sender: {
+      name: config.FROM_NAME || 'Sprintly',
+      email: config.SENDER_EMAIL,
+    },
+    to: [
+      {
+        email,
+      },
+    ],
     subject,
-    text: message || '',
-    html: html || '',
+    htmlContent: html || `<p>${message || ''}</p>`,
+    textContent: message || '',
   };
 
-  const info = await transporter.sendMail(mailOptions);
-  return info;
+  const response = await axios.post(
+    'https://api.brevo.com/v3/smtp/email',
+    payload,
+    {
+      headers: {
+        'api-key': config.BREVO_API_KEY,
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      timeout: 15000,
+    }
+  );
+
+  return response.data;
 };
 
 module.exports = sendEmail;
