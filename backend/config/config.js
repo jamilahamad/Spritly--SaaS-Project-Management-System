@@ -20,6 +20,10 @@ module.exports = {
   CLOUDINARY_API_KEY: process.env.CLOUDINARY_API_KEY,
   CLOUDINARY_API_SECRET: process.env.CLOUDINARY_API_SECRET,
 
+  BREVO_API_KEY: process.env.BREVO_API_KEY,
+  SENDER_EMAIL: process.env.SENDER_EMAIL,
+
+
   FRONTEND_URL: process.env.FRONTEND_URL || 'http://localhost:3000',
 
   RATE_LIMIT_WINDOW: Number(process.env.RATE_LIMIT_WINDOW) || 15 * 60 * 1000,
